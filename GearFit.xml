@@ -1,0 +1,32 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.blizzard.com/wow/ui/"> 
+
+<Script file="GearFit.lua"/>
+<Frame name="GearFit" parent="GameTooltipTemplate" hidden="true">
+	<Anchors>
+		<Anchor point="Bottom"/>
+	</Anchors>
+	<Scripts>
+		<OnLoad>
+			GearFit_OnLoad();
+		</OnLoad>
+		<OnUpdate>
+			GearFit_OnUpdate( event);
+		</OnUpdate>
+	</Scripts>
+
+
+</Frame>
+
+<GameTooltip name="GearFit_Tooltip" inherits="GameTooltipTemplate">
+		<Scripts>
+			<Onload>
+				self:SetOwner(WorldFrame, "ANCHOR_NONE");
+			</Onload>
+		</Scripts>
+</GameTooltip>
+<GameTooltip name="GearFit_Tooltip_Game" inherits="GameTooltipTemplate"/>
+<GameTooltip name="GearFIt_Tooltip_Item" inherits="GameTooltipTemplate"/>
+	
+</Ui>

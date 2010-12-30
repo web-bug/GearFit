@@ -1,0 +1,11 @@
+## Interface: 40000
+## Title: GearFit
+## Notes: displays Gear Suitability in a tool tip
+## Version: 1.2
+## OptionalDeps:
+## Dependencies: 
+## SavedVariablesPerCharacter: GearFitSettings
+
+GearFit.xml
+GearFit.lua
+
